@@ -10,10 +10,14 @@ app.get('/home', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.sendFile(__dirname + '/views/about.html')
-})
+}) 
 
 app.get('/works', (req, res) => {
     res.sendFile(__dirname + '/views/works.html')
+})
+
+app.get('/gallery', (req, res) => {
+    res.sendFile(__dirname + '/views/gallery.html')
 })
 
 app.listen(3000, () => {
